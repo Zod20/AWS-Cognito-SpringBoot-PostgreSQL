@@ -41,6 +41,7 @@ public class AwsCognitoIdTokenProcessor {
         System.out.println("zod A1 person" + configurableJWTProcessor.toString());
         System.out.println("zod A2 person" + configurableJWTProcessor.toString());
         System.out.println("zod A1 person test_branch" + configurableJWTProcessor.toString());
+        System.out.println("zod A2 person on master_branch" + configurableJWTProcessor.toString());
         String idToken = request.getHeader(this.jwtConfiguration.getHttpHeader());
         if (idToken != null) {
             JWTClaimsSet claims = this.configurableJWTProcessor.process(this.getBearerToken(idToken), null);
